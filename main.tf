@@ -39,6 +39,6 @@ resource "azurerm_dns_a_record" "frontend" {
   zone_name           = "rdevopsb89.online"
   resource_group_name = "denmark-east-rg"
   ttl                 = 30
-  records             = [azurerm_network_interface.frontend.id]
+  records             = [azurerm_network_interface.frontend.private_ip_address]
 }
 
