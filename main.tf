@@ -1,4 +1,5 @@
 # Configure the Microsoft Azure Provider
+# Configure the Microsoft test
 provider "azurerm" {
 features {}
 }
