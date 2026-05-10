@@ -1,4 +1,3 @@
-```hcl
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
 features {}
@@ -562,8 +561,10 @@ vtpm_enabled        = true
 }
 
 resource "azurerm_dns_a_record" "ratings" {
-name                = "ratings-dev"
-zone_name           = "drmohanlearning.online"
-resource_group_name = "denmark-east-rg"
-ttl                 = 30
-records             = [azurerm_network_interface.ratings.private_ip_address]
+  name                = "ratings-dev"
+  zone_name           = "drmohanlearning.online"
+  resource_group_name = "denmark-east-rg"
+  ttl                 = 30
+  records = [azurerm_network_interface.ratings.private_ip_address]
+
+}
