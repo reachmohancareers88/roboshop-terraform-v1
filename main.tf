@@ -1,4 +1,4 @@
-# Configure the Microsoft Azure Provider V1 MOHAN
+# Configure the Microsoft Azure Provider V1 MOHAN KUMAR
 
 resource "azurerm_public_ip" "frontend" {
   name                = "frontend"
